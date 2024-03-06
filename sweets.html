@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <span class="welcome-nav">Welcome <br></span>
+            <span class="nav-right-title">Order Or Explore From new restaurants Around you</span>
+        </div>
+        <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search For restaurants,food and more...">
+        </div>
+    </header>
+    <div class="container secndc">
+        <img src="https://static.toiimg.com/thumb/63799510.cms?imgsize=1091643&width=800&height=800" alt="">
+        <div class="details">
+
+            <h1>Gulab Jamun</h1>
+            <h5>Category Sweets</h5>
+            <h1>Price:</h1>
+            <h1>$6.78</h1>
+            <button class="buynow">
+                Buy Now
+            </button>
+        </div>
+
+    </div>
+    <script>
+        let buybutton=document.querySelector('.buynow')
+        buybutton.addEventListener('click',()=>{
+        console.log("Buy Button Clicked");
+        prompt("Enter Your Address")
+        alert("Thanks For ordering will be deleivered in one hour")
+})
+    </script>
+</body>
+</html>
